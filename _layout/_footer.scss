@@ -10,11 +10,47 @@
 
 footer{
     display: flex;
-    padding: 2em 5em;
+    padding: 2em 6em;
     border-top: 5px solid var(--vert);
-}
 
-.f-form{
-    display: flex;
-    flex-direction: column;
+    .f-infos{
+        margin-right: 8em;
+        font-weight: 400;
+        line-height: 2;
+
+        & div:first-of-type{
+            margin: 1em 0;
+        }
+
+        & i{
+            font-size: 1.5em;
+
+            &:first-of-type{
+                margin-right: .5em;
+            }
+        }
+    }
+    
+    .f-form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6em;
+
+        & h3{
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        & input[type=text]{
+            @include input-text;
+        }
+
+        & button{
+            @include button;
+            padding: 1em;
+            background-color: var(--vert);
+        }
+    }
 }

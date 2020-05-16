@@ -11,11 +11,24 @@
 
 .promotion{
     display: flex;
-    background-image: url(../img/promotion.jpg);
     height: 65vh;
+    background-image: url(../img/promotion.jpg);
 
     & .promo-infos{
         margin: 5em;
+        padding: 2em;
+        width: 40vw;
         background-color: hsla(0, 0%, 100%, 0.85);
+
+        & p{
+            margin-top: 1em;
+            font-size: 1.4em;
+            font-weight: 400;
+            line-height: 1.5;
+
+            & .bold{
+                font-weight: 500;
+            }
+        }
     }
 }

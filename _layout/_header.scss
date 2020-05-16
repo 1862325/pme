@@ -13,7 +13,7 @@
     @include flex-items-center;
     justify-content: flex-end;
     padding: 0 2em;
-    height: 3em;
+    height: 2.5em;
     font-weight: 400;
     color: var(--blanc);
     background-color: var(--vert);
@@ -26,9 +26,11 @@
 header{
     background-image: url(../img/header.jpg);
     height: 80vh;
-    padding: 2em 4em;
+    padding: 2em 6em;
 
     & img{
         margin-right: 2em;
+        width: 13em;
+        height: auto;
     }
 }

@@ -12,4 +12,18 @@
 .heures{
     @include flex-column-center;
     padding: 6em 5em;
+
+    & div{
+        margin: 1em 0;
+        
+        & p{
+            @extend div;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        & .bold{
+            font-weight: 500;
+        }
+    }
 }

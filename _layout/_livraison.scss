@@ -18,4 +18,23 @@
         height: auto;
         color: var(--vert);
     }
+
+    & p{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    & input[type=text]{
+        @include input-text;
+    }
+
+    & button{
+        @include button;
+        padding: .5em 1.5em;
+        background-color: var(--vert);
+    }
+
+    & img, p, button, input[type=text]{
+        margin-top: 1.5em;
+    }
 }

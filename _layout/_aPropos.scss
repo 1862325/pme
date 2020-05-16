@@ -15,11 +15,26 @@
     background-color: var(--gris-pale);
 
     & article{
+        margin-top: 3em;
         display: flex;
-    }
+        
+            & img{
+                width: 30em;
+                height: auto;
+            }
 
-    & img{
-        width: 30em;
-        height: auto;
+            & div{
+                padding: 0 0 0 2em;
+                width: 40vw;
+                line-height: 2;
+                font-weight: 400;
+
+                & p{
+                    &:first-of-type{
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
     }
 }

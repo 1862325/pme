@@ -17,7 +17,7 @@ ________________________________________________________*/
 /*////[Reset du code HTML]
 ________________________________________________________*/
 /*[Reset tout les balises]*/
-html, body, div, span, applet, object, iframe,
+html, body, div, .heures div p, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -74,11 +74,29 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2em 5em;
+  padding: 2em 6em;
   border-top: 5px solid var(--vert);
 }
 
-.f-form {
+footer .f-infos {
+  margin-right: 8em;
+  font-weight: 400;
+  line-height: 2;
+}
+
+footer .f-infos div:first-of-type, footer .f-infos .heures div p:first-of-type, .heures div footer .f-infos p:first-of-type {
+  margin: 1em 0;
+}
+
+footer .f-infos i {
+  font-size: 1.5em;
+}
+
+footer .f-infos i:first-of-type {
+  margin-right: .5em;
+}
+
+footer .f-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +104,34 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 6em;
+}
+
+footer .f-form h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+footer .f-form input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer .f-form button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1em;
+  background-color: var(--vert);
 }
 
 .top-nav {
@@ -99,7 +145,7 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0 2em;
-  height: 3em;
+  height: 2.5em;
   font-weight: 400;
   color: var(--blanc);
   background-color: var(--vert);
@@ -112,11 +158,13 @@ footer {
 header {
   background-image: url(../img/header.jpg);
   height: 80vh;
-  padding: 2em 4em;
+  padding: 2em 6em;
 }
 
 header img {
   margin-right: 2em;
+  width: 13em;
+  height: auto;
 }
 
 header .nav-wrapper {
@@ -266,17 +314,43 @@ header ul li {
   padding: 6em 5em;
 }
 
+.heures div, .heures div p {
+  margin: 1em 0;
+}
+
+.heures div p {
+  font-weight: 400;
+  text-align: center;
+}
+
+.heures div .bold {
+  font-weight: 500;
+}
+
 .promotion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../img/promotion.jpg);
   height: 65vh;
+  background-image: url(../img/promotion.jpg);
 }
 
 .promotion .promo-infos {
   margin: 5em;
+  padding: 2em;
+  width: 40vw;
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.promotion .promo-infos p {
+  margin-top: 1em;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.promotion .promo-infos p .bold {
+  font-weight: 500;
 }
 
 .livraison {
@@ -369,6 +443,35 @@ header ul li {
   color: var(--vert);
 }
 
+.perimetre-livraison p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.perimetre-livraison input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.perimetre-livraison button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: .5em 1.5em;
+  background-color: var(--vert);
+}
+
+.perimetre-livraison img, .perimetre-livraison p, .perimetre-livraison button, .perimetre-livraison input[type=text] {
+  margin-top: 1.5em;
+}
+
 .entreprise {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,14 +491,26 @@ header ul li {
 }
 
 .entreprise article {
+  margin-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.entreprise img {
+.entreprise article img {
   width: 30em;
   height: auto;
+}
+
+.entreprise article div, .entreprise article .heures div p, .heures div .entreprise article p {
+  padding: 0 0 0 2em;
+  width: 40vw;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.entreprise article div p:first-of-type, .heures div .entreprise article p p:first-of-type {
+  margin-bottom: 1em;
 }
 
 h2 {
@@ -412,7 +527,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.produits h2:after, .heures h2:after, .livraison h2:after, .perimetre-livraison h2:after {
+.produits h2:after, .heures h2:after, .livraison h2:after, .perimetre-livraison h2:after, .entreprise h2:after {
   content: "";
   display: block;
   background-color: var(--vert);
@@ -422,7 +537,7 @@ h2 {
   margin: .6em auto 0 auto;
 }
 
-.promotion h2:after, .entreprise h2:after {
+.promotion h2:after {
   content: "";
   display: block;
   background-color: var(--vert);
