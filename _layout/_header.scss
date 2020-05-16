@@ -8,3 +8,35 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // CSS du header
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.top-nav{
+    @include flex-items-center;
+    justify-content: flex-end;
+    padding: 0 2em;
+    height: 3em;
+    color: var(--blanc);
+    background-color: var(--vert);
+
+    & p, i{
+        margin: 0 .3em;
+    }
+}
+
+header{
+    background-image: url(../img/header.jpg);
+    height: 80vh;
+    padding: 2em 4em;
+
+    & .nav-wrapper{
+        display: flex;
+    }
+
+    & ul{
+        display: flex;
+        color: var(--blanc);
+        
+        & li{
+            margin: 0 .5em;
+        }
+    }
+}
