@@ -17,6 +17,14 @@
 
     & .p-intro{
         @include flex-column-center;
+        padding: 0 10em;
+        text-align: center;
+        color: var(--gris-fonce);
+
+        & p{
+            margin: 2em 0;
+            font-weight: 400;
+        }
     }
 
     & h2{
@@ -25,6 +33,7 @@
 
     & .p-liste{
         display: flex;
+        flex-wrap: wrap; //temporaire
     }
 
     & article{
@@ -33,5 +42,27 @@
         margin: 0 2em;
         padding: 1em;
         background-color: var(--blanc);
+
+        & h3{
+            margin: 2em 0;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 500;
+            color: var(--gris-fonce);
+        }
+
+        & button{
+            @include button;
+            padding: .5rem;
+            font-size: .75em;
+            background-color: var(--vert-pale);
+        }
+    }
+
+    & .btn-produits{
+        @include button;
+        margin-top: 2em;
+        background-color: var(--vert);
+        padding: .6rem .8rem;
+        font-size: .9rem;
     }
 }

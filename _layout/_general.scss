@@ -1,0 +1,36 @@
+//----------------------------------------------------//
+//                                                    //
+//               // General  //                       //
+//                _general.scss                       //
+//----------------------------------------------------//
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS général qui s'applique à tout les pages
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+h2{
+    @include flex-column;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.produits, .heures, .livraison, .perimetre-livraison{
+    h2{
+        &:after{
+           @include ligne-after;
+           margin: .6em auto 0 auto;
+        }
+    }
+}
+
+.promotion, .entreprise{
+    h2{
+        &:after{
+           @include ligne-after;
+           margin: .6em 0 0 0;
+        }
+    }
+}

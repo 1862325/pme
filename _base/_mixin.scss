@@ -25,7 +25,27 @@
      display: flex;
      align-items: center;
  }
+
  @mixin flex-column{
      display: flex;
      flex-direction: column;
  }
+
+@mixin ligne-after{
+    content: "";
+    display: block;
+    background-color: var(--vert);
+    height: 2px;
+    width: 7em;
+    margin-top: .5em;
+}
+
+@mixin button{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

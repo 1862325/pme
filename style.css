@@ -100,18 +100,23 @@ footer {
           justify-content: flex-end;
   padding: 0 2em;
   height: 3em;
+  font-weight: 400;
   color: var(--blanc);
   background-color: var(--vert);
 }
 
 .top-nav p, .top-nav i {
-  margin: 0 .3em;
+  margin: 0 .5em;
 }
 
 header {
   background-image: url(../img/header.jpg);
   height: 80vh;
   padding: 2em 4em;
+}
+
+header img {
+  margin-right: 2em;
 }
 
 header .nav-wrapper {
@@ -124,11 +129,15 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Roboto Slab', serif;
+  font-size: .8em;
+  font-weight: 500;
+  text-transform: uppercase;
   color: var(--blanc);
 }
 
 header ul li {
-  margin: 0 .5em;
+  margin: 0 .8em;
 }
 
 .produits {
@@ -164,6 +173,14 @@ header ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 10em;
+  text-align: center;
+  color: var(--gris-fonce);
+}
+
+.produits .p-intro p {
+  margin: 2em 0;
+  font-weight: 400;
 }
 
 .produits h2 {
@@ -174,6 +191,8 @@ header ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .produits article {
@@ -194,6 +213,40 @@ header ul li {
   margin: 0 2em;
   padding: 1em;
   background-color: var(--blanc);
+}
+
+.produits article h3 {
+  margin: 2em 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  color: var(--gris-fonce);
+}
+
+.produits article button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: .5rem;
+  font-size: .75em;
+  background-color: var(--vert-pale);
+}
+
+.produits .btn-produits {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 2em;
+  background-color: var(--vert);
+  padding: .6rem .8rem;
+  font-size: .9rem;
 }
 
 .heures {
@@ -343,5 +396,39 @@ header ul li {
 .entreprise img {
   width: 30em;
   height: auto;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.produits h2:after, .heures h2:after, .livraison h2:after, .perimetre-livraison h2:after {
+  content: "";
+  display: block;
+  background-color: var(--vert);
+  height: 2px;
+  width: 7em;
+  margin-top: .5em;
+  margin: .6em auto 0 auto;
+}
+
+.promotion h2:after, .entreprise h2:after {
+  content: "";
+  display: block;
+  background-color: var(--vert);
+  height: 2px;
+  width: 7em;
+  margin-top: .5em;
+  margin: .6em 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */

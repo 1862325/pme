@@ -3,3 +3,22 @@
 //              // NAV PRINCIPALE //                  //
 //               _navPrincipale.scss                  //
 //----------------------------------------------------//
+
+header{
+    & .nav-wrapper{
+        display: flex;
+    }
+
+    & ul{
+        display: flex;
+        font-family: 'Roboto Slab', serif;
+        font-size: .8em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--blanc);
+        
+        & li{
+            margin: 0 .8em;
+        }
+    }
+}
