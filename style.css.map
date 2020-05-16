@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AEMA;0DAC0D;ACA1D;0DAC0D",
+    "mappings": "AEMA;0DAC0D;AAC1D,AAAA,KAAK,CAAA;EACD,2BAA2B;EAC3B,WAAW,CAAA,mBAAC;EACZ,MAAM,CAAA,mBAAC;EACP,WAAW,CAAA,gBAAC;EACZ,YAAY,CAAA,gBAAC;EACb,OAAO,CAAA,iBAAC;EACR,MAAM,CAAA,eAAC;EACP,iCAAiC;EACjC,iBAAiB,CAAA,KAAC;EAClB,iBAAiB,CAAA,KAAC;CACrB;;ACZD;0DAC0D",
     "sources": [
         "style.scss",
         "_base/_base.scss",
@@ -18,7 +18,12 @@
         "_layout/_navFooter.scss",
         "_layout/_navLangue.scss",
         "_layout/_navPrincipale.scss",
-        "_layout/_pub.scss",
+        "_layout/_carousselProduits.scss",
+        "_layout/_heuresOuverture.scss",
+        "_layout/_promotion.scss",
+        "_layout/_etapes.scss",
+        "_layout/_livraison.scss",
+        "_layout/_aPropos.scss",
         "_modules/_modules.scss",
         "_modules/_gallerieImage.scss",
         "_modules/_login.scss"
