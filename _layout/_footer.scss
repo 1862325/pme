@@ -7,3 +7,14 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Mise en forme du footer
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+footer{
+    display: flex;
+    padding: 2em 5em;
+    border-top: 5px solid var(--vert);
+}
+
+.f-form{
+    display: flex;
+    flex-direction: column;
+}

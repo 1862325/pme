@@ -1,0 +1,21 @@
+//----------------------------------------------------//
+//                                                    //
+//                 // Livraison //                    //
+//                  _livraison.scss                   //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche perimètre de livraison
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.perimetre-livraison{
+    @include flex-column-center;
+    padding: 6em 5em;
+
+    & img{
+        width: 6em;
+        height: auto;
+        color: var(--vert);
+    }
+}

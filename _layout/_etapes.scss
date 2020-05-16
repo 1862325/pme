@@ -1,0 +1,60 @@
+//----------------------------------------------------//
+//                                                    //
+//             // Étapes livraison //                 //
+//                 _etapes.scss                       //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche des étapes de commande
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.livraison{
+    @include flex-column-center;
+    padding: 6em 5em;
+    background-color: var(--gris-pale);
+
+    & .etapes-livraison{
+        display: flex;
+        margin-top: 4em;
+        text-align: center;
+
+        & .e-1{
+            & img{
+                width: 8em;
+                height: auto;
+                margin-bottom: 2em;
+            }
+        }
+        
+        & .e-2{
+            & img{
+                width: 6em;
+                height: auto;
+                margin-bottom: 2em;
+            }
+        }
+
+        & .e-3{
+            & img{
+                width: 6em;
+                height: auto;
+                margin-bottom: 2em;
+            }
+        }
+
+        & .e-4{
+            & img{
+                width: 6em;
+                height: auto;
+                margin-bottom: 2em;
+            }
+        }
+        
+
+        & .e-1, .e-2, .e-3, .e-4{
+            @include flex-column-center;
+            width: 12em;
+        }
+    }
+}

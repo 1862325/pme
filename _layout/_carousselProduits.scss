@@ -1,10 +1,37 @@
 //----------------------------------------------------//
 //                                                    //
 //             // Caroussel Produits //               //
-//             _carousselProduits.scs                 //
+//             _carousselProduits.scss                //
 //----------------------------------------------------//
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // CSS de la couche caroussel de l'accueil
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.produits{
+    @include flex-column-center;
+    padding: 6em 5em;
+    background-color: var(--gris-pale);
+    color: var(--gris-fonce);
+
+    & .p-intro{
+        @include flex-column-center;
+    }
+
+    & h2{
+        color: var(--noir);
+    }
+
+    & .p-liste{
+        display: flex;
+    }
+
+    & article{
+        @include flex-column-center;
+        width: 25em;
+        margin: 0 2em;
+        padding: 1em;
+        background-color: var(--blanc);
+    }
+}

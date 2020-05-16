@@ -70,6 +70,24 @@ nav ul {
   list-style: none;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 5em;
+  border-top: 5px solid var(--vert);
+}
+
+.f-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,5 +129,219 @@ header ul {
 
 header ul li {
   margin: 0 .5em;
+}
+
+.produits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6em 5em;
+  background-color: var(--gris-pale);
+  color: var(--gris-fonce);
+}
+
+.produits .p-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.produits h2 {
+  color: var(--noir);
+}
+
+.produits .p-liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.produits article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25em;
+  margin: 0 2em;
+  padding: 1em;
+  background-color: var(--blanc);
+}
+
+.heures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6em 5em;
+}
+
+.promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/promotion.jpg);
+  height: 65vh;
+}
+
+.promotion .promo-infos {
+  margin: 5em;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.livraison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6em 5em;
+  background-color: var(--gris-pale);
+}
+
+.livraison .etapes-livraison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.livraison .etapes-livraison .e-1 img {
+  width: 8em;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.livraison .etapes-livraison .e-2 img {
+  width: 6em;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.livraison .etapes-livraison .e-3 img {
+  width: 6em;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.livraison .etapes-livraison .e-4 img {
+  width: 6em;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.livraison .etapes-livraison .e-1, .livraison .etapes-livraison .e-2, .livraison .etapes-livraison .e-3, .livraison .etapes-livraison .e-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 12em;
+}
+
+.perimetre-livraison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6em 5em;
+}
+
+.perimetre-livraison img {
+  width: 6em;
+  height: auto;
+  color: var(--vert);
+}
+
+.entreprise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6em 5em;
+  background-color: var(--gris-pale);
+}
+
+.entreprise article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entreprise img {
+  width: 30em;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+//----------------------------------------------------//
+//                                                    //
+//                   // Promotion //                  //
+//                   _promotion.scss                  //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche de la promotion
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.promotion{
+    display: flex;
+    background-image: url(../img/promotion.jpg);
+    height: 65vh;
+
+    & .promo-infos{
+        margin: 5em;
+        background-color: hsla(0, 0%, 100%, 0.85);
+    }
+}

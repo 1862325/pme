@@ -1,0 +1,25 @@
+//----------------------------------------------------//
+//                                                    //
+//                 // À propos //                     //
+//                  _aPropos.scss                     //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche à propos
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.entreprise{
+    @include flex-column-center;
+    padding: 6em 5em;
+    background-color: var(--gris-pale);
+
+    & article{
+        display: flex;
+    }
+
+    & img{
+        width: 30em;
+        height: auto;
+    }
+}
