@@ -32,46 +32,92 @@
             </nav>
         </div>
    </header> 
-   <section class="produits" id="nav-produits">
-       <div class="p-intro">
-            <h2>Consultez nos produits</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, lacus sit amet imperdiet pulvinar, sem urna interdum odio, nec rutrum quam neque ac lacus.</p>
-       </div>
-       <div class="p-liste">
-            <article class="p-1">
-                <img src="img/salade.jpg" alt="">
-                <h3>Salade du chef</h3>
-                <button type="button">En savoir plus</button>
-            </article>
-            <article class="p-2">
-                <img src="img/pates.jpg" alt="">
-                <h3>Pennes à la sauce alfredo avec tomates</h3>
-                <button type="button">En savoir plus</button>
-            </article>
-            <article class="p-3">
-                <img src="img/burger.jpg" alt="">
-                <h3>Burger avec boulette de boeuf</h3>
-                <button type="button">En savoir plus</button>
-            </article>
-       </div>
-       <button type="button" class="btn-produits">Voir le menu</button>
+   <section class="fil-ariane">
+        <p>Accueil</p>
+        <p>></p>
+        <p>Menu</p>
    </section>
-   <section class="heures" id="nav-heures">
-        <h2>Les heures d'ouvertures</h2>
-        <div>
-            <p><span class="bold">Dimanche fermé</span></p> 
-            <p><span class="bold">Lundi :</span> 11h30 - 22h00</p>
-            <p><span class="bold">Mardi :</span> 11h30 - 22h00</p>
-            <p><span class="bold">Mercredi :</span> 11h30 - 22h00</p>
-            <p><span class="bold">Jeudi :</span> 11h30 - 22h00</p>
-            <p><span class="bold">Vendredi :</span> 11h30 - 22h00</p>
-            <p><span class="bold">Samedi :</span> 17h00 - 23h00</p>
-        </div>
-   </section>
-   <section class="promotion">
-        <div class="promo-infos">
-            <h2>Promotion du mois</h2>
-            <p>Choisissez parmi une de nos entrées <span class="bold">gratuitement</span> avec une commande de <span class="bold">35$ et plus</span></p>
+   <section class="liste-produits" id="nav-produits">
+        <h2>Notre menu</h2>
+        <div class="liste-menu">
+            <article class="m-1">
+                <img src="img/salade-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Salade du chef</h3>
+                    <div class="description-menu">
+                        <p>120 calories</p>
+                        <p>4,29$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
+            <article class="m-2">
+                <img src="img/calmar-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Calmars frits</h3>
+                    <div class="description-menu">
+                        <p>450 calories</p>
+                        <p>8,99$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
+            <article class="m-3">
+                <img src="img/burger-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Burger avec boulette de boeuf</h3>
+                    <div class="description-menu">
+                        <p>1350 calories</p>
+                        <p>14,89$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
+            <article class="m-4">
+                <img src="img/burger2-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Burger végé</h3>
+                    <div class="description-menu">
+                        <p>1050 calories</p>
+                        <p>16,39$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
+            <article class="m-5">
+                <img src="img/pennes-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Pennes à la sauce alfredo avec tomates</h3>
+                    <div class="description-menu">
+                        <p>875 calories</p>
+                        <p>13,99$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
+            <article class="m-6">
+                <img src="img/brownie-menu.jpg" alt="">
+                <div class="infos-menu">
+                    <h3>Brownie aux 3 chocolats</h3>
+                    <div class="description-menu">
+                        <p>450 calories</p>
+                        <p>9,49$</p>
+                    </div>
+                </div>
+                <div class="btn-menu">
+                    <a href="">Consulter</a>
+                </div>
+            </article>
         </div>
    </section>
    <section class="livraison" id="nav-livraison">
@@ -101,16 +147,6 @@
        <p>Vérifiez si vous êtes dans le périmètre de 10 kilomètres pour la livraison</p>
        <input type="text" name="code-postal" placeholder="Votre code postal">
        <button type="button">Vérifier</button>
-   </section>
-   <section class="entreprise" id="nav-entreprise">
-        <h2>À propos de bistro la fourchette</h2>
-        <article>
-            <img src="img/bistro.jpg" alt="">
-            <div>
-                <p>Vestibulum tempus posuere turpis, iaculis porttitor velit semper id. Donec laoreet turpis mauris, nec dapibus nibh imperdiet vitae. Aenean lacinia placerat diam. In lobortis molestie enim, eu porta lacus finibus eget. Morbi dictum lectus leo, vel finibus tortor venenatis et. Vivamus facilisis consequat elit. Maecenas diam libero, vehicula non risus sit amet, varius euismod neque. Nulla vitae diam hendrerit, faucibus orci in, placerat nunc. Duis scelerisque suscipit lorem vitae sollicitudin.</p>
-                <p>Congue nibh sollicitudin at.  Suspendisse et commodo tortor, at varius sem. Sed molestie velit ut venenatis hendrerit. Vivamus porta mattis ante vestibulum cursus. Vivamus eu neque nisl. Phasellus id lacinia ligula nec dapibus tellus. Praesent ultrices, felis eu tristique dignissim, est sapien vulputate ipsum, itae placerat nulla risus nec est. Maecenas rhoncus lectus id nulla venenatis, ac tincidunt sem cursus. Nulla sit amet pellentesque nisl.</p>
-            </div>
-        </article>
    </section>
    <footer>
         <section class="f-infos">

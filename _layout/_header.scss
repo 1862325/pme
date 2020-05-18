@@ -34,3 +34,19 @@ header{
         height: auto;
     }
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS du fil d'ariane
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.fil-ariane{
+    @include flex-items-center;
+    height: 2.5em;
+    padding: 0 6em;
+    font-weight: 400;
+    color: var(--blanc);
+    background-color: var(--vert-pale);
+    & p{
+        margin-right: 1em;
+    }
+}

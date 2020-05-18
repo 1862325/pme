@@ -5,6 +5,7 @@ ________________________________________________________*/
   /*[Variantes de couleurs]*/
   --vert-pale: hsl(155, 23%, 50%);
   --vert: hsl(155, 30%, 37%);
+  --gris-tres-pale: hsl(0, 0%, 94%);
   --gris-pale: hsl(0, 0%, 89%);
   --gris-fonce: hsl(0, 0%, 10%);
   --blanc: hsl(0, 0%, 100%);
@@ -104,7 +105,6 @@ footer .f-form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 6em;
 }
 
 footer .f-form h3 {
@@ -165,6 +165,116 @@ header img {
   margin-right: 2em;
   width: 13em;
   height: auto;
+}
+
+.fil-ariane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5em;
+  padding: 0 6em;
+  font-weight: 400;
+  color: var(--blanc);
+  background-color: var(--vert-pale);
+}
+
+.fil-ariane p {
+  margin-right: 1em;
+}
+
+.liste-produits {
+  padding: 6em 5em;
+  background-color: var(--gris-tres-pale);
+}
+
+.liste-produits h2 {
+  text-align: center;
+}
+
+.liste-produits .liste-menu {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.liste-produits .liste-menu article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5em;
+  height: 25em;
+  background-color: var(--blanc);
+  border: 2px solid #9b9b9b;
+  -webkit-box-shadow: 5px 10px 8px #c4c4c4;
+          box-shadow: 5px 10px 8px #c4c4c4;
+}
+
+.liste-produits .liste-menu article .infos-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.liste-produits .liste-menu article h3 {
+  margin: 3em 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+
+.liste-produits .liste-menu article .description-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.liste-produits .liste-menu article .description-menu p:first-of-type {
+  margin-right: 12em;
+}
+
+.liste-produits .liste-menu article .btn-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  height: 3em;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .9em;
+  color: var(--blanc);
+  background-color: var(--vert);
 }
 
 header .nav-wrapper {
@@ -527,7 +637,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.produits h2:after, .heures h2:after, .livraison h2:after, .perimetre-livraison h2:after, .entreprise h2:after {
+.produits h2:after, .heures h2:after, .livraison h2:after, .perimetre-livraison h2:after, .entreprise h2:after, .liste-produits h2:after {
   content: "";
   display: block;
   background-color: var(--vert);

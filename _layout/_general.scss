@@ -17,7 +17,7 @@ h2{
     text-transform: uppercase;
 }
 
-.produits, .heures, .livraison, .perimetre-livraison, .entreprise{
+.produits, .heures, .livraison, .perimetre-livraison, .entreprise, .liste-produits{
     h2{
         &:after{
            @include ligne-after;

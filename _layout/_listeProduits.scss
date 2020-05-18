@@ -1,0 +1,72 @@
+//----------------------------------------------------//
+//                                                    //
+//               // Liste produits //                 //
+//               _listeProduits.scss                  //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la couche de la liste des produits
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.liste-produits{
+    padding: 6em 5em;
+    background-color: var(--gris-tres-pale);
+    
+    & h2{
+        text-align: center;
+    }
+    
+    & .liste-menu{
+        margin-top: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & article{
+            @include flex-column;
+            align-items: center;
+            margin: 1.5em;
+            height: 25em;
+            background-color: var(--blanc);
+            border: 2px solid #9b9b9b;
+            box-shadow: 5px 10px 8px #c4c4c4;
+
+            & .infos-menu{
+                @include flex-column;
+                align-items: center;
+                width: 100%;
+            }
+
+            & h3{
+                margin: 3em 0;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 500;
+            }
+
+            & .description-menu{
+                display: flex;
+                font-size: .9em;
+                font-weight: 400;
+
+                & p:first-of-type{
+                    margin-right: 12em;
+                }
+            }
+
+            & .btn-menu{
+                @include flex-items-center;
+                justify-content: center;
+                margin-top: 1em;
+                height: 3em;
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: .9em;
+                color: var(--blanc);
+                background-color: var(--vert);
+            }
+        }
+    }
+    
+}
