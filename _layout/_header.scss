@@ -24,7 +24,7 @@
 }
 
 header{
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header-1020.jpg);
     height: 80vh;
     padding: 2em 6em;
 
@@ -49,4 +49,18 @@ header{
     & p{
         margin-right: 1em;
     }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 1200
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include rwd-min-width(1200){
+    background-color: cadetblue;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 1800
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include rwd-min-width(1200){  
+    background-image: url(../img/header-1800.jpg);
 }
