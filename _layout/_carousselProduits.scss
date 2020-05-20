@@ -55,6 +55,10 @@
             padding: .5rem;
             font-size: .75em;
             background-color: var(--vert-pale);
+
+            &:hover{
+                background-color: var(--vert);
+            }
         }
     }
 
@@ -64,5 +68,9 @@
         background-color: var(--vert);
         padding: .6rem .8rem;
         font-size: .9rem;
+
+        &:hover{
+            background-color: var(--vert-fonce);
+        }
     }
 }

@@ -20,11 +20,17 @@
 
     & p, i{
         margin: 0 .5em;
+         &:hover{
+             color: var(--gris-pale);
+             cursor: pointer;
+         }
     }
 }
 
 header{
     background-image: url(../img/header-1020.jpg);
+    background-position: center;
+    background-size: cover;
     height: 80vh;
     padding: 2em 6em;
 
@@ -55,12 +61,16 @@ header{
 // Breakpoint 1200
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @include rwd-min-width(1200){
-    background-color: cadetblue;
+    background-image: url(../img/header-1200.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Breakpoint 1800
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-@include rwd-min-width(1200){  
+@include rwd-min-width(1800){  
     background-image: url(../img/header-1800.jpg);
+    background-position: center;
+    background-size: cover;
 }

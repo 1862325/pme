@@ -5,6 +5,7 @@ ________________________________________________________*/
   /*[Variantes de couleurs]*/
   --vert-pale: hsl(155, 23%, 50%);
   --vert: hsl(155, 30%, 37%);
+  --vert-fonce: hsl(156, 31%, 31%);
   --gris-tres-pale: hsl(0, 0%, 94%);
   --gris-pale: hsl(0, 0%, 89%);
   --gris-fonce: hsl(0, 0%, 10%);
@@ -75,7 +76,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2em 6em;
+  padding: 2em 25em;
   border-top: 5px solid var(--vert);
 }
 
@@ -134,6 +135,10 @@ footer .f-form button {
   background-color: var(--vert);
 }
 
+footer .f-form button:hover {
+  background-color: var(--vert-fonce);
+}
+
 .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,8 +160,15 @@ footer .f-form button {
   margin: 0 .5em;
 }
 
+.top-nav p:hover, .top-nav i:hover {
+  color: var(--gris-pale);
+  cursor: pointer;
+}
+
 header {
   background-image: url(../img/header-1020.jpg);
+  background-position: center;
+  background-size: cover;
   height: 80vh;
   padding: 2em 6em;
 }
@@ -186,11 +198,15 @@ header img {
 }
 
 @media (min-width: 1200px) {
-  background-color: cadetblue;
+  background-image: url(../img/header-1200.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   background-image: url(../img/header-1800.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .liste-produits {
@@ -285,6 +301,11 @@ header img {
   background-color: var(--vert);
 }
 
+.liste-produits .liste-menu article .btn-menu:hover {
+  background-color: var(--vert-fonce);
+  cursor: pointer;
+}
+
 header .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +325,11 @@ header ul {
 
 header ul li {
   margin: 0 .8em;
+}
+
+header ul li:hover {
+  color: var(--gris-pale);
+  border-bottom: 2px solid var(--vert);
 }
 
 .produits {
@@ -401,6 +427,10 @@ header ul li {
   background-color: var(--vert-pale);
 }
 
+.produits article button:hover {
+  background-color: var(--vert);
+}
+
 .produits .btn-produits {
   display: inline-block;
   text-align: center;
@@ -413,6 +443,10 @@ header ul li {
   background-color: var(--vert);
   padding: .6rem .8rem;
   font-size: .9rem;
+}
+
+.produits .btn-produits:hover {
+  background-color: var(--vert-fonce);
 }
 
 .heures {
@@ -451,6 +485,8 @@ header ul li {
   display: flex;
   height: 65vh;
   background-image: url(../img/promotion.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .promotion .promo-infos {
@@ -586,6 +622,10 @@ header ul li {
   background-color: var(--vert);
 }
 
+.perimetre-livraison button:hover {
+  background-color: var(--vert-fonce);
+}
+
 .perimetre-livraison img, .perimetre-livraison p, .perimetre-livraison button, .perimetre-livraison input[type=text] {
   margin-top: 1.5em;
 }
@@ -703,6 +743,10 @@ h2 {
   margin-left: 2em;
   font-size: .9em;
   background-color: var(--vert);
+}
+
+.fiche-produit .fiche-description .ajout button:hover {
+  background-color: var(--vert-fonce);
 }
 
 .fiche-produit .fiche-description .calo-prix, .fiche-produit .fiche-description .ajout {

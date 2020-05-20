@@ -40,6 +40,10 @@
                 margin-left: 2em;
                 font-size: .9em;
                 background-color: var(--vert);
+
+                &:hover{
+                    background-color: var(--vert-fonce);
+                }
             }
         }
 

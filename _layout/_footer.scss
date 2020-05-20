@@ -10,7 +10,7 @@
 
 footer{
     display: flex;
-    padding: 2em 6em;
+    padding: 2em 25em;
     border-top: 5px solid var(--vert);
 
     .f-infos{
@@ -50,6 +50,10 @@ footer{
             @include button;
             padding: 1em;
             background-color: var(--vert);
+
+            &:hover{
+                background-color: var(--vert-fonce);
+            }
         }
     }
 }
