@@ -410,6 +410,7 @@ header ul li:hover {
   font-size: 2em;
   background-color: var(--mauve);
   display: none;
+  z-index: 1999;
 }
 
 #top-btn:hover {

@@ -46,6 +46,7 @@ header{
     font-size: 2em;
     background-color: var(--mauve);
     display: none;
+    z-index: 1999;
 
     &:hover{
         background-color: var(--mauve-fonce);
