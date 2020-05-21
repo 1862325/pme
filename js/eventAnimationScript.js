@@ -30,22 +30,11 @@ $(document).ready(function(){
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Menu sticky
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-var monHeros = $('.heros')
-        var maNav = $('.navigation')
-
-
-        function checkSticky() {
-            var partieDefilee = $(document).scrollTop();
-            var hauteurHeros = monHeros.outerHeight();
-
-    
-            if (partieDefilee >= hauteurHeros) {
-                maNav.addClass('sticky');
-            } else {
-                maNav.removeClass('sticky');
-            }
-        }
-        
-        checkSticky();
-        $(document).scroll(checkSticky);
-        $(window).resize(checkSticky);
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 28) {
+        $('.nav-wrapper').addClass('sticky');
+    }
+    else {
+        $('.nav-wrapper').removeClass('sticky');
+    }
+});

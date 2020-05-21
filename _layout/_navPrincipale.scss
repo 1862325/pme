@@ -31,3 +31,25 @@ header{
         }
     }
 }
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// class rajouter par jquery
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.sticky{
+    @include flex-items-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1em 8em;
+    z-index: 19999;
+    background-color: var(--vert-t);
+    border-bottom: 2px solid var(--vert);
+
+    & img{
+        width: 10%;
+        height: auto;
+    }
+}

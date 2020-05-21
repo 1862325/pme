@@ -6,6 +6,7 @@ ________________________________________________________*/
   --vert-pale: hsl(155, 23%, 50%);
   --vert: hsl(155, 30%, 37%);
   --vert-fonce: hsl(156, 31%, 31%);
+  --vert-t: hsla(155, 30%, 37%, 0.541);
   --gris-tres-pale: hsl(0, 0%, 94%);
   --gris-pale: hsl(0, 0%, 89%);
   --gris-fonce: hsl(0, 0%, 10%);
@@ -385,6 +386,29 @@ header ul li {
 header ul li:hover {
   color: var(--gris-pale);
   border-bottom: 2px solid var(--vert);
+}
+
+.sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1em 8em;
+  z-index: 19999;
+  background-color: var(--vert-t);
+  border-bottom: 2px solid var(--vert);
+}
+
+.sticky img {
+  width: 10%;
+  height: auto;
 }
 
 .produits {
