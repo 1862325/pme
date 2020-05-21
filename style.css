@@ -312,6 +312,10 @@ header .nav-wrapper {
   display: flex;
 }
 
+header nav {
+  background-color: none !important;
+}
+
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,14 +381,6 @@ header ul li:hover {
 
 .produits h2 {
   color: var(--noir);
-}
-
-.produits .p-liste {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .produits article {

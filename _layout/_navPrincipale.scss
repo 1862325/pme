@@ -9,6 +9,10 @@ header{
         display: flex;
     }
 
+    & nav{
+        background-color: none!important;
+    }
+
     & ul{
         display: flex;
         font-family: 'Roboto Slab', serif;

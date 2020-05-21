@@ -31,11 +31,6 @@
         color: var(--noir);
     }
 
-    & .p-liste{
-        display: flex;
-        flex-wrap: wrap; //temporaire
-    }
-
     & article{
         @include flex-column-center;
         width: 25em;
