@@ -34,6 +34,26 @@ header{
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Css bouton scroll to top
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#top-btn{
+    @include button;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    padding: .4em .5em;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: var(--mauve);
+    display: none;
+
+    &:hover{
+        background-color: var(--mauve-fonce);
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // class rajouter par jquery
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .sticky{

@@ -3,10 +3,12 @@
 ________________________________________________________*/
 :root {
   /*[Variantes de couleurs]*/
+  --mauve: hsl(298, 41%, 51%);
+  --mauve-fonce: hsl(308, 42%, 45%);
   --vert-pale: hsl(155, 23%, 50%);
   --vert: hsl(155, 30%, 37%);
   --vert-fonce: hsl(156, 31%, 31%);
-  --vert-t: hsla(155, 30%, 37%, 0.541);
+  --vert-t: hsla(155, 30%, 37%, 0.664);
   --gris-tres-pale: hsl(0, 0%, 94%);
   --gris-pale: hsl(0, 0%, 89%);
   --gris-fonce: hsl(0, 0%, 10%);
@@ -132,6 +134,8 @@ footer .f-form button {
   color: white;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 1em;
   background-color: var(--vert);
 }
@@ -388,6 +392,30 @@ header ul li:hover {
   border-bottom: 2px solid var(--vert);
 }
 
+#top-btn {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  padding: .4em .5em;
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: var(--mauve);
+  display: none;
+}
+
+#top-btn:hover {
+  background-color: var(--mauve-fonce);
+}
+
 .sticky {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,6 +527,8 @@ header ul li:hover {
   color: white;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: .5rem;
   font-size: .75em;
   background-color: var(--vert-pale);
@@ -516,6 +546,8 @@ header ul li:hover {
   color: white;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: relative;
   top: -10em;
   background-color: var(--vert);
@@ -697,6 +729,8 @@ header ul li:hover {
   color: white;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: .5em 1.5em;
   background-color: var(--vert);
 }
@@ -818,6 +852,8 @@ h2 {
   color: white;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 1em 1.5em;
   margin-left: 2em;
   font-size: .9em;
