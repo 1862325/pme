@@ -11,6 +11,7 @@ ________________________________________________________*/
   --vert-t: hsla(155, 30%, 37%, 0.664);
   --gris-tres-pale: hsl(0, 0%, 94%);
   --gris-pale: hsl(0, 0%, 89%);
+  --gris: hsl(0, 0%, 59%);
   --gris-fonce: hsl(0, 0%, 10%);
   --blanc: hsl(0, 0%, 100%);
   --noir: hsl(0, 0%, 0%);
@@ -73,6 +74,27 @@ a:visited {
 /*[Reset des listes à l'intérieur d'un nav]*/
 nav ul {
   list-style: none;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+      grid-template-areas: 'aside contenu';
+}
+
+.itemGridAside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+.itemGridContenu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contenu;
 }
 
 footer {
@@ -811,7 +833,7 @@ h2 {
   margin: .6em auto 0 auto;
 }
 
-.promotion h2:after, .fiche-produit h2:after {
+.promotion h2:after, .fiche-produit h2:after, .itemGridContenu h2:after {
   content: "";
   display: block;
   background-color: var(--vert);
@@ -969,5 +991,169 @@ h2 {
 .connection p {
   margin-top: 1em;
   font-size: .8em;
+}
+
+main {
+  background-color: var(--gris-pale);
+}
+
+.itemGridAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2em 1em;
+  background-color: var(--vert);
+}
+
+.itemGridAside img {
+  width: 15em;
+  height: auto;
+}
+
+.itemGridAside h2 {
+  margin: 4em 0 1em;
+  color: var(--blanc);
+  font-size: .8em;
+  border-bottom: 2px solid var(--blanc);
+}
+
+.itemGridAside nav {
+  color: inherit;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  background-color: transparent;
+  line-height: normal;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.itemGridAside nav a {
+  color: inherit;
+}
+
+.itemGridAside nav i,
+.itemGridAside nav i.material-icons {
+  display: inline-block;
+  font-size: inherit;
+  height: auto;
+  line-height: 1;
+}
+
+.itemGridAside nav ul {
+  margin: 0;
+}
+
+.itemGridAside nav ul li {
+  -webkit-transition: none;
+  transition: none;
+  float: none;
+  padding: 0;
+}
+
+.itemGridAside nav ul li.active {
+  background-color: transparent;
+}
+
+.itemGridAside nav ul a {
+  display: inline-block;
+  -webkit-transition: none;
+  transition: none;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.itemGridAside nav ul a:hover {
+  background-color: transparent;
+}
+
+.itemGridAside nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--blanc);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.itemGridAside nav ul li {
+  padding: 2em;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.itemGridAside nav ul li:hover {
+  background-color: var(--vert-fonce);
+}
+
+.itemGridContenu {
+  padding: 2em 5em;
+  width: 100%;
+}
+
+.itemGridContenu h2 {
+  font-size: 1.5em;
+}
+
+.itemGridContenu article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em 0;
+  font-size: 1.3em;
+}
+
+.itemGridContenu article .chiffre {
+  padding: 1em 1.5em;
+  font-weight: 500;
+  border: 3px solid var(--gris);
+}
+
+.itemGridContenu article p:nth-of-type(2) {
+  padding: 0 2em;
+}
+
+.itemGridContenu article button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: .7em;
+  padding: .5em;
+  font-weight: 500;
+  background-color: var(--vert);
+}
+
+.itemGridContenu article button:hover {
+  background-color: var(--vert-fonce);
 }
 /*# sourceMappingURL=style.css.map */

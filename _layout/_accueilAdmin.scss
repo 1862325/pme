@@ -1,0 +1,91 @@
+//----------------------------------------------------//
+//                                                    //
+//              // Accueil Admin //                   //
+//               _accueilAdmin.scss                   //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS de la page accueil admin
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+main{
+    background-color: var(--gris-pale);
+}
+
+.itemGridAside{
+    @include flex-column-center2;
+    width: 100%;
+    padding: 2em 1em;
+    background-color: var(--vert);
+
+    & img{
+        width: 15em;
+        height: auto;
+    }
+
+    & h2{
+        margin: 4em 0 1em;
+        color: var(--blanc);
+        font-size: .8em;
+        border-bottom: 2px solid var(--blanc);
+    }
+
+    & nav{
+        @include reset-nav-materialize;
+
+        & ul{
+            @include flex-column-center2;
+            color: var(--blanc);
+            text-transform: uppercase;
+            font-weight: 500;
+
+            & li{
+                padding: 2em;
+                width: 100%;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: var(--vert-fonce);
+                }
+            }
+        }
+    }
+}
+
+.itemGridContenu{
+    padding: 2em 5em;
+    width: 100%;
+
+    & h2{
+        font-size: 1.5em;
+    }
+
+    & article{
+        @include flex-items-center;
+        margin: 5em 0;
+        font-size: 1.3em;
+
+        & .chiffre{
+            padding: 1em 1.5em;
+            font-weight: 500;
+            border: 3px solid var(--gris);
+        }
+
+        & p:nth-of-type(2){
+            padding: 0 2em;
+        }
+
+        & button{
+            @include button;
+            font-size: .7em;
+            padding: .5em;
+            font-weight: 500;
+            background-color: var(--vert);
+
+            &:hover{
+                background-color: var(--vert-fonce);
+            }
+        }
+    }
+}

@@ -3,3 +3,23 @@
 //              // GRILLE DESKTOP //                  //
 //              _grilleDesktop.scss                   //
 //----------------------------------------------------/
+
+main{
+    display: grid;
+    min-height: 100vh;   
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+    'aside contenu';
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Assignation zones
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.itemGridAside{
+    grid-area: aside;
+}
+
+.itemGridContenu{
+    grid-area: contenu;
+}
