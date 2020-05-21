@@ -10,7 +10,7 @@ header{
     }
 
     & nav{
-        background-color: none!important;
+      @include reset-nav-materialize;
     }
 
     & ul{

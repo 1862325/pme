@@ -57,3 +57,55 @@
     border: none;
     cursor: pointer;
 }
+
+@mixin reset-nav-materialize {
+    color: inherit;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    background-color: transparent;
+    line-height: normal;
+    box-shadow: none;
+
+    a {
+        color: inherit;
+    }
+
+    i,
+    i.material-icons {
+      display: inline-block;
+      font-size: inherit;
+      height: auto;
+      line-height: 1;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            transition: none;
+            float: none;
+            padding: 0;
+
+            &.active {
+                background-color: transparent;
+            }
+        }
+
+        a {
+            display: inline-block;
+            transition: none;
+            font-size: inherit;
+            color: inherit;
+            padding: 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}

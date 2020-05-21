@@ -31,6 +31,12 @@
         color: var(--noir);
     }
 
+    & .carousel{
+        height: 40em;
+        top: -12em;
+        left: -7em;
+    }
+
     & article{
         @include flex-column-center;
         width: 25em;
@@ -59,7 +65,8 @@
 
     & .btn-produits{
         @include button;
-        margin-top: 2em;
+        position: relative;
+        top: -10em;
         background-color: var(--vert);
         padding: .6rem .8rem;
         font-size: .9rem;

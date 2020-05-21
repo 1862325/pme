@@ -26,6 +26,7 @@
 
     & input[type=text]{
         @include input-text;
+        width: 20%;
     }
 
     & button{
