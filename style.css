@@ -124,6 +124,7 @@ footer .f-form input[type=text] {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: var(--blanc);
 }
 
 footer .f-form button {
@@ -719,6 +720,7 @@ header ul li:hover {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: var(--blanc);
   width: 20%;
 }
 
@@ -897,5 +899,75 @@ h2 {
   margin: 1em;
   width: 10em;
   height: auto;
+}
+
+.connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: var(--gris-pale);
+}
+
+.connection img {
+  margin-bottom: 2em;
+  width: 15em;
+  height: auto;
+}
+
+.connection input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--blanc);
+  width: 10%;
+  height: 2em;
+}
+
+.connection input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--blanc);
+  width: 10%;
+  height: 2em;
+}
+
+.connection button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 2em;
+  background-color: var(--vert);
+  padding: 1em 1.5em;
+}
+
+.connection button:hover {
+  background-color: var(--vert-fonce);
+}
+
+.connection p {
+  margin-top: 1em;
+  font-size: .8em;
 }
 /*# sourceMappingURL=style.css.map */

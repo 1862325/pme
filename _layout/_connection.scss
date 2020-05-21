@@ -1,0 +1,49 @@
+//----------------------------------------------------//
+//                                                    //
+//                 // CONNECTION //                   //
+//               _connection.scss                     //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// CSS du formulaire de connection
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.connection{
+    @include flex-column-center;
+    height: 100vh;
+    background-color: var(--gris-pale);
+
+    & img{
+        margin-bottom: 2em;
+        width: 15em;
+        height: auto;
+    }
+
+    & input[type=text]{
+        @include input-text;
+        width: 10%;
+        height: 2em;
+    }
+    & input[type=password]{
+        @include input-text;
+        width: 10%;
+        height: 2em;
+    }
+
+    & button{
+        @include button;
+        margin-top: 2em;
+        background-color: var(--vert);
+        padding: 1em 1.5em;
+
+        &:hover{
+            background-color: var(--vert-fonce);
+        }
+    }
+    
+    & p{
+        margin-top: 1em;
+        font-size: .8em;
+    }
+}
