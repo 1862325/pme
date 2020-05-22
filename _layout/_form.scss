@@ -1,0 +1,31 @@
+//----------------------------------------------------//
+//                                                    //
+//                // Formulaires //                   //
+//                    _form.scss                      //
+//----------------------------------------------------//
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Formulaire d'ajout de produit
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.itemGridContenu{
+    & input[type=text]{
+        @include input-text;
+    }
+
+    & #description{
+        padding: 1em;
+        background-color: var(--blanc);
+    }
+
+    & input[type=submit]{
+        @include button;
+        padding: .5em;
+        font-size: .8em;
+        background-color: var(--vert);
+
+        &:hover{
+            background-color: (--vert-fonce);
+        }
+    }
+}

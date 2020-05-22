@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des produits admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <aside class="itemGridAside">
+            <img src="svg/logo-blanc.svg" alt="logo bistro la fourchette">
+            <h2>Vos options</h2>
+            <nav class="nav-admin">
+                <ul>
+                    <a href=""><li>Afficher les commandes</li></a>
+                    <a href=""><li>Afficher tous les produits</li></a>
+                    <a href=""><li>Ajouter un produit</li></a>
+                </ul>
+            </nav>
+        </aside>
+        <div class="itemGridContenu">
+                <h2>Module de gestion du site</h2>
+                <section class="liste-admin">
+                    <article class="item-liste">
+                        <img src="img/brownie-appercu.jpg" alt="brownies">
+                        <div>
+                            <h3>Brownies aux 3 chocolats</h3>
+                            <p>Mauris nisi turpis, congue id faucibus eget, viverra eu nunc. Vestibulum eleifend augue ac neque feugiat, at tincidunt massa eleifend. Donec congue ornare dictum. Phasellus imperdiet commodo volutpat. Proin finibus tortor ac luctus vehicula. Ut augue dui, aliquam in pulvinar luctus, finibus at ex. Integer quis ipsum vel magna malesuada finibus quis in tortor. </p>
+                        </div>
+                        <div class="item-info3">
+                            <div class="item-icones">
+                                <a href=""><i class="fas fa-pen"></i></a>
+                                <a href=""><i class="fas fa-times-circle"></i></a>
+                            </div>
+                            <p>9,49$</p>
+                        </div>
+                    </article>
+                    <article class="item-liste">
+                        <img src="img/burger-appercu.jpg" alt="brownies">
+                        <div>
+                            <h3>Burger avec boulette de boeuf</h3>
+                            <p>Mauris nisi turpis, congue id faucibus eget, viverra eu nunc. Vestibulum eleifend augue ac neque feugiat, at tincidunt massa eleifend. Donec congue ornare dictum. Phasellus imperdiet commodo volutpat. Proin finibus tortor ac luctus vehicula. Ut augue dui, aliquam in pulvinar luctus, finibus at ex. Integer quis ipsum vel magna malesuada finibus quis in tortor. </p>
+                        </div>
+                        <div class="item-info3">
+                            <div class="item-icones">
+                                <a href=""><i class="fas fa-pen"></i></a>
+                                <a href=""><i class="fas fa-times-circle"></i></a>
+                            </div>
+                            <p>14,89$</p>
+                        </div>
+                    </article>
+                </section>
+                
+                <div class="popup-overlay">
+                    <section id="popup" class="popup-content">
+                        <p>Voulez-vous vraiment supprimer le produit?</p>
+                        <div>
+                            <button type="submit" class="close">Annuler</button>
+                            <button type="submit">Supprimer</button>
+                        </div>
+                    </section>
+                </div>
+        </div>
+    </main>
+</body>
+</html>

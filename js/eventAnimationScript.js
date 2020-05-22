@@ -85,3 +85,17 @@ $(function() {
     $('#top-btn').on('mouseenter', function(){  
         animateCSS('#top-btn', 'pulse');
     });
+
+    
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Popup
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    $(".open").on("click", function() {
+        $(".popup-overlay").addClass("active");
+        console.log('click');
+    });
+
+    $(".close, .popup-overlay").on("click", function() {
+        $(".popup-overlay").removeClass("active");
+    });
+
